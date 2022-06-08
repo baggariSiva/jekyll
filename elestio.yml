@@ -5,6 +5,7 @@ config:
   buildCommand: "jekyll build"
   buildDir: "_site"
   runCommand: "jekyll serve --host 0.0.0.0"
+  installCommand: "bundle install"
 ports:
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
