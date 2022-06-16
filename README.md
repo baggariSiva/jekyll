@@ -1,12 +1,39 @@
-
 # Jekyll example demo CI/CD pipeline
 
 <a href="https://dash.elest.io/deploy?source=cicd&social=Github&url=https://github.com/elestio-examples/jekyll"><img src="deploy-on-elestio.png" alt="Deploy on Elest.io" width="180px" /></a>
 
-# Jekyll
+This is a very basic example of a simple Jekyll App.
+
+<img src="screenshot.png" alt="screenshot of the Jekyll app" width="100%" />
+
+# Steps to clone this repository and run locally.
 
 
-<img src="screenshot.png" alt="screenshot of the example app" width="100%" />
+### Step 1: Clone this repository.
+
+```
+git clone https://github.com/elestio-examples/jekyll.git
+```
+### Step 2: Go to project folder.
+
+```
+cd jekyll
+```
+
+### Step 3: Install dependencies.
+
+```
+bundle install
+```
+
+### Step 4: Run your app in dev mode.
+
+```
+jekyll serve
+```
+
+### Step 5: Make some changes and push.
+
 
 ## CI/CD on Elestio
 
@@ -33,7 +60,7 @@ But for this Jekyll Template, you can choose GitHub as your deployment method.
 Select Clone in step at step Git Repository and select Jekyll template for creating a repository in your git account after that authenticate with Git by clicking on
 Continue with Github button and authorize elestio to access git then you can rename you repository name if you want.
 
-Else If you forked the repo then you can click on the Continue with GitHub button and authorize elestio to access the git repo then you can select the jekyll repo otherwise you can directly insert a git repo URL to deploy the Jekyll Application.
+Else If you forked the repo then you can click on the Continue with GitHub button and authorize elestio to access the git repo then you can select the Jekyll repo otherwise you can directly insert a git repo URL to deploy the Jekyll application.
 
 ### Step 4: Configuration
 
@@ -92,3 +119,5 @@ Now after following all the above steps you can click on the button **Create Ci/
 It will take a few seconds to deploy your pipeline on elestio.
 
 For each pipeline deployed on elestio will create a cname for it. but if you want your custom domain then you can configure it inside the target details.
+
+After Pipeline is deployed you can able to view the app by visiting the pipeline domain.
